@@ -1,7 +1,7 @@
 import json, math, matplotlib
 matplotlib.use('Agg'); import matplotlib.pyplot as plt
 from matplotlib import font_manager
-R = json.load(open('/tmp/claude-0/repo/results.json'))
+R = json.load(open('results.json'))
 P = R['partners']; core = R['core']
 same = sorted([p for p in P if not p['cross']], key=lambda p: -p['lift_pp'])
 cross = sorted([p for p in P if p['cross']], key=lambda p: -p['lift_pp'])
@@ -34,4 +34,4 @@ ax.scatter(0, 0, s=520, color='#23306B', zorder=4); ax.text(0, 0, f"{core}\n{R['
 ax.text(-4.6, 2.25, 'Same community as 2D (pixel / platformer), sorted by lift', fontsize=6.5, color='#555', ha='left', va='top')
 ax.text(4.6, 2.25, 'Other communities (second audience), sorted by lift', fontsize=6.5, color='#555', ha='right', va='top')
 ax.set_xlim(-4.7, 4.7); ax.set_ylim(-1.9, 2.3); ax.axis('off')
-plt.tight_layout(pad=0.1); plt.savefig('out/figure_ego.png', dpi=300, bbox_inches='tight')
+plt.tight_layout(pad=0.1); plt.savefig('figure_ego.png', dpi=300, bbox_inches='tight')
