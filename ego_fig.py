@@ -15,7 +15,7 @@ def place(group, side):
 place(same, -1)
 place(cross, 1)
 ORANGE, NAVY, GREY = '#E8692C', '#2E5AAC', '#9AA0AE'
-fig, ax = plt.subplots(figsize=(6.9, 2.2), dpi=300)
+fig, ax = plt.subplots(figsize=(6.9, 1.95), dpi=300)
 for p in P:
     x, y = pos[p['partner']]
     hl = p['partner'] in ('Arcade', 'Mystery'); cr = p['partner'] == R['crowded']
