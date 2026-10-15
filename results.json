@@ -1,0 +1,513 @@
+{
+ "pull_date": "2026-10-15",
+ "seed": "Indie",
+ "n_pool": 6287,
+ "n_sample": 600,
+ "n_games": 592,
+ "min_reviews": 500,
+ "median_reviews": 1584.5,
+ "median_score": 0.8586410247612657,
+ "K": 15,
+ "generic": [
+  [
+   "Singleplayer",
+   0.606
+  ],
+  [
+   "Adventure",
+   0.473
+  ],
+  [
+   "Action",
+   0.453
+  ]
+ ],
+ "seed_prev": 0.768581081081081,
+ "nodes": 157,
+ "edges": 2342,
+ "n_keep": 157,
+ "n_pairs": 6830,
+ "top_raw": [
+  [
+   "2D",
+   "Pixel Graphics",
+   94
+  ],
+  [
+   "2D",
+   "Casual",
+   67
+  ],
+  [
+   "Multiplayer",
+   "Co-op",
+   60
+  ],
+  [
+   "Atmospheric",
+   "Story Rich",
+   60
+  ],
+  [
+   "Casual",
+   "Simulation",
+   58
+  ],
+  [
+   "Simulation",
+   "Strategy",
+   57
+  ],
+  [
+   "2D",
+   "Puzzle",
+   54
+  ],
+  [
+   "Atmospheric",
+   "Puzzle",
+   53
+  ]
+ ],
+ "top_npmi": [
+  [
+   "Rogue-like",
+   "Rogue-lite",
+   0.838,
+   38
+  ],
+  [
+   "Hentai",
+   "NSFW",
+   0.835,
+   11
+  ],
+  [
+   "Sexual Content",
+   "Nudity",
+   0.829,
+   26
+  ],
+  [
+   "Hentai",
+   "Sexual Content",
+   0.802,
+   18
+  ],
+  [
+   "Action Roguelike",
+   "Rogue-lite",
+   0.801,
+   28
+  ],
+  [
+   "Clicker",
+   "Idler",
+   0.797,
+   11
+  ],
+  [
+   "NSFW",
+   "Mature",
+   0.778,
+   10
+  ],
+  [
+   "Hentai",
+   "Nudity",
+   0.775,
+   16
+  ]
+ ],
+ "wdeg_raw": [
+  [
+   "2D",
+   1256
+  ],
+  [
+   "Casual",
+   973
+  ],
+  [
+   "Multiplayer",
+   859
+  ],
+  [
+   "Atmospheric",
+   786
+  ],
+  [
+   "RPG",
+   776
+  ]
+ ],
+ "communities": {
+  "0": [
+   "2D",
+   "Pixel Graphics",
+   "Great Soundtrack",
+   "Cute",
+   "Difficult",
+   "Platformer",
+   "Retro",
+   "Colorful",
+   "Action-Adventure",
+   "Side Scroller",
+   "Hand-drawn",
+   "Controller"
+  ],
+  "1": [
+   "Atmospheric",
+   "Puzzle",
+   "Story Rich",
+   "First-Person",
+   "Horror",
+   "Female Protagonist",
+   "Psychological Horror",
+   "Anime",
+   "Sci-fi",
+   "Point & Click",
+   "Violent",
+   "Gore"
+  ],
+  "2": [
+   "RPG",
+   "Fantasy",
+   "Rogue-like",
+   "Rogue-lite",
+   "Action RPG",
+   "Top-Down",
+   "Turn-Based",
+   "Action Roguelike",
+   "Hack and Slash",
+   "Isometric",
+   "Procedural Generation",
+   "Dungeon Crawler"
+  ],
+  "3": [
+   "Casual",
+   "Simulation",
+   "Exploration",
+   "Sandbox",
+   "Early Access",
+   "Open World",
+   "Family Friendly",
+   "Survival",
+   "Relaxing",
+   "Management",
+   "Arcade",
+   "3D"
+  ],
+  "4": [
+   "Multiplayer",
+   "Strategy",
+   "Funny",
+   "Co-op",
+   "Free to Play",
+   "Shooter",
+   "Online Co-Op",
+   "Comedy",
+   "FPS",
+   "Local Co-Op",
+   "Local Multiplayer",
+   "PvP"
+  ]
+ },
+ "core": "2D",
+ "core_games": 198,
+ "pick": "RPGMaker",
+ "crowded": "Pixel Graphics",
+ "partners": [
+  {
+   "partner": "RPGMaker",
+   "n_pair": 11,
+   "npmi": 0.1808,
+   "lift_pp": 4.0604,
+   "owners_x": 1.0,
+   "p": 1.0,
+   "cross": true,
+   "crowd_share": 0.0556
+  },
+  {
+   "partner": "Arcade",
+   "n_pair": 26,
+   "npmi": 0.1749,
+   "lift_pp": 3.9002,
+   "owners_x": 1.0,
+   "p": 0.1106,
+   "cross": true,
+   "crowd_share": 0.1313
+  },
+  {
+   "partner": "Mystery",
+   "n_pair": 21,
+   "npmi": 0.1065,
+   "lift_pp": 3.811,
+   "owners_x": 0.5,
+   "p": 0.1089,
+   "cross": true,
+   "crowd_share": 0.1061
+  },
+  {
+   "partner": "Shoot 'Em Up",
+   "n_pair": 12,
+   "npmi": 0.1916,
+   "lift_pp": 3.1908,
+   "owners_x": 1.6667,
+   "p": 0.413,
+   "cross": false,
+   "crowd_share": 0.0606
+  },
+  {
+   "partner": "Colorful",
+   "n_pair": 20,
+   "npmi": 0.1043,
+   "lift_pp": 2.2229,
+   "owners_x": 0.75,
+   "p": 0.2782,
+   "cross": false,
+   "crowd_share": 0.101
+  },
+  {
+   "partner": "Great Soundtrack",
+   "n_pair": 47,
+   "npmi": 0.1803,
+   "lift_pp": 1.9722,
+   "owners_x": 2.3333,
+   "p": 0.4398,
+   "cross": false,
+   "crowd_share": 0.2374
+  },
+  {
+   "partner": "Minimalist",
+   "n_pair": 10,
+   "npmi": 0.1532,
+   "lift_pp": 1.851,
+   "owners_x": 1.0,
+   "p": 0.5222,
+   "cross": false,
+   "crowd_share": 0.0505
+  },
+  {
+   "partner": "Bullet Hell",
+   "n_pair": 12,
+   "npmi": 0.1916,
+   "lift_pp": 1.4009,
+   "owners_x": 1.6667,
+   "p": 0.6196,
+   "cross": true,
+   "crowd_share": 0.0606
+  },
+  {
+   "partner": "Action Roguelike",
+   "n_pair": 16,
+   "npmi": 0.1114,
+   "lift_pp": 1.0108,
+   "owners_x": 2.3333,
+   "p": 0.6771,
+   "cross": true,
+   "crowd_share": 0.0808
+  },
+  {
+   "partner": "Local Co-Op",
+   "n_pair": 20,
+   "npmi": 0.1417,
+   "lift_pp": 0.8382,
+   "owners_x": 2.3333,
+   "p": 0.8579,
+   "cross": true,
+   "crowd_share": 0.101
+  },
+  {
+   "partner": "Pixel Graphics",
+   "n_pair": 94,
+   "npmi": 0.4317,
+   "lift_pp": 0.7136,
+   "owners_x": 1.0,
+   "p": 0.5729,
+   "cross": false,
+   "crowd_share": 0.4747
+  },
+  {
+   "partner": "Puzzle",
+   "n_pair": 54,
+   "npmi": 0.1102,
+   "lift_pp": 0.4095,
+   "owners_x": 1.0,
+   "p": 0.5309,
+   "cross": true,
+   "crowd_share": 0.2727
+  },
+  {
+   "partner": "2D Platformer",
+   "n_pair": 18,
+   "npmi": 0.2834,
+   "lift_pp": -0.0243,
+   "owners_x": 1.0,
+   "p": 0.8343,
+   "cross": false,
+   "crowd_share": 0.0909
+  },
+  {
+   "partner": "Metroidvania",
+   "n_pair": 13,
+   "npmi": 0.2493,
+   "lift_pp": -0.6073,
+   "owners_x": 2.3333,
+   "p": 0.76,
+   "cross": false,
+   "crowd_share": 0.0657
+  },
+  {
+   "partner": "Point & Click",
+   "n_pair": 32,
+   "npmi": 0.1836,
+   "lift_pp": -1.4614,
+   "owners_x": 1.0,
+   "p": 0.794,
+   "cross": true,
+   "crowd_share": 0.1616
+  },
+  {
+   "partner": "Platformer",
+   "n_pair": 52,
+   "npmi": 0.3223,
+   "lift_pp": -1.7473,
+   "owners_x": 1.6667,
+   "p": 0.6031,
+   "cross": false,
+   "crowd_share": 0.2626
+  },
+  {
+   "partner": "Difficult",
+   "n_pair": 43,
+   "npmi": 0.1955,
+   "lift_pp": -1.7587,
+   "owners_x": 1.0,
+   "p": 0.8285,
+   "cross": false,
+   "crowd_share": 0.2172
+  },
+  {
+   "partner": "Side Scroller",
+   "n_pair": 30,
+   "npmi": 0.3353,
+   "lift_pp": -1.8218,
+   "owners_x": 1.0,
+   "p": 0.9132,
+   "cross": false,
+   "crowd_share": 0.1515
+  },
+  {
+   "partner": "Top-Down",
+   "n_pair": 18,
+   "npmi": 0.1232,
+   "lift_pp": -2.2218,
+   "owners_x": 2.3333,
+   "p": 0.3548,
+   "cross": true,
+   "crowd_share": 0.0909
+  },
+  {
+   "partner": "Retro",
+   "n_pair": 38,
+   "npmi": 0.2917,
+   "lift_pp": -2.2252,
+   "owners_x": 1.0,
+   "p": 0.5957,
+   "cross": false,
+   "crowd_share": 0.1919
+  },
+  {
+   "partner": "Hand-drawn",
+   "n_pair": 17,
+   "npmi": 0.1303,
+   "lift_pp": -3.2103,
+   "owners_x": 1.0,
+   "p": 0.6107,
+   "cross": false,
+   "crowd_share": 0.0859
+  },
+  {
+   "partner": "Puzzle-Platformer",
+   "n_pair": 14,
+   "npmi": 0.1718,
+   "lift_pp": -4.1569,
+   "owners_x": 1.6667,
+   "p": 0.5566,
+   "cross": false,
+   "crowd_share": 0.0707
+  }
+ ],
+ "sweep": [
+  {
+   "K": 10,
+   "cut": 0.05,
+   "top": "Funny",
+   "pick_rank": NaN
+  },
+  {
+   "K": 10,
+   "cut": 0.1,
+   "top": "Arcade",
+   "pick_rank": NaN
+  },
+  {
+   "K": 10,
+   "cut": 0.15,
+   "top": "Arcade",
+   "pick_rank": NaN
+  },
+  {
+   "K": 15,
+   "cut": 0.05,
+   "top": "Comedy",
+   "pick_rank": 2.0
+  },
+  {
+   "K": 15,
+   "cut": 0.1,
+   "top": "RPGMaker",
+   "pick_rank": 1.0
+  },
+  {
+   "K": 15,
+   "cut": 0.15,
+   "top": "RPGMaker",
+   "pick_rank": 1.0
+  },
+  {
+   "K": 20,
+   "cut": 0.05,
+   "top": "Female Protagonist",
+   "pick_rank": 17.0
+  },
+  {
+   "K": 20,
+   "cut": 0.1,
+   "top": "Cute",
+   "pick_rank": 7.0
+  },
+  {
+   "K": 20,
+   "cut": 0.15,
+   "top": "Great Soundtrack",
+   "pick_rank": 3.0
+  }
+ ],
+ "bootstrap": {
+  "Arcade": 0.132,
+  "RPGMaker": 0.118,
+  "Comedy": 0.082,
+  "Mystery": 0.072,
+  "Funny": 0.068,
+  "Minimalist": 0.052
+ },
+ "B": 500,
+ "triang": {
+  "n": 30,
+  "rho": 0.9866518353726361
+ },
+ "fig_nodes": 29,
+ "fig_edges": 86
+}
