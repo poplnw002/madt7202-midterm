@@ -1,25 +1,31 @@
 # MADT 7202 Mid-Term: Steam tag network
+Narongrit Bureeruk · 6810424013
 
-**Question:** Which tag should a Thai indie studio pair with its core genre on Steam?
+**Question:** Which tag should a Thai 2D indie studio pair with its next Steam game?
 
 ## Files
 | File | What it is |
 |---|---|
-| `steam_tag_network.ipynb` | Full pipeline: data collection, cleaning, graph, NPMI vs raw count, robustness, figure (run top to bottom in Google Colab) |
+| `6810424013_Narongrit_Bureeruk.pdf` | The one-page A4 submission |
+| `steam_tag_network.ipynb` | Full pipeline: data collection, cleaning, graph, NPMI vs raw count, robustness (run top to bottom in Google Colab) |
 | `results.json` | All numbers used on the one-page report |
-| `figure.png` | The figure on the page |
-| `report.pdf` | The one-page A4 submission |
+| `ego_fig.py` | Draws the report figure from `results.json` |
+| `figure_ego.png` | The figure on the page (2D's ego network) |
+| `figure.png` | Wider tag-network figure from the notebook |
 
 ## Data
-- **Source:** SteamSpy public API (`request=tag`, `request=appdetails`). Review totals were cross-checked against Steam's public `appreviews` endpoint for 30 games.
-- **Access:** Public API with no key and no login. Requests are paced at about 1 per second, following SteamSpy's stated rate limit. Only game-level aggregates are kept, so there is no personal data.
-- **Sample:** A random 600 games (seed 7202) drawn from Indie-tagged games with at least 500 reviews. The pull date is recorded in `results.json`.
+- **Source:** SteamSpy public API (`request=tag`, `request=appdetails`). Review totals were cross-checked against Steam's public `appreviews` endpoint for 30 games (Spearman ρ 0.99).
+- **Access:** Public API, no key, no login. robots.txt is `Allow: /`. Requests are paced at about 1 per second. Only game-level aggregates are kept, so there is no personal data, and raw pulls are not redistributed.
+- **Sample:** 15 Oct 2026. A random 600 games (seed 7202) from 6,287 Indie-tagged games with at least 500 reviews; 592 kept.
 
 ## Rules fixed before results
 1. The seed tag `Indie` is excluded from all rankings.
-2. Generic tags, present in at least 40% of games' top-K tags, are dropped.
-3. **Partner rule:** among neighbours of the core tag with NPMI ≥ 0.10 and at least 10 shared games, rank partners by lift in median positive-review share against core-only games.
+2. Generic tags, present in at least 40% of games' top-15 tags, are dropped.
+3. Partner rule: among the core tag's neighbours with NPMI ≥ 0.10 and at least 10 shared games, rank by lift in median positive-review share against core-only games.
 4. A partner is recommended only if it stays #1 in at least 60% of 500 bootstrap resamples.
 
+**Note:** The notebook's default core `Roguelike` is not a Steam tag name, so the notebook fell back to the most common non-generic tag, `2D` (198 games).
+
 ## Reproduce
-Open the notebook in Google Colab and choose **Runtime → Run all**. The run takes about 15 minutes.
+1. Open the notebook in Google Colab and choose **Runtime → Run all** (about 15 minutes).
+2. Then run `python ego_fig.py` to redraw the report figure.
